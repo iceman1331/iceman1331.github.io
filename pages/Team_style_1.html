@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+html 
+*{ box-sizing: border-box;}
+*, *:before, *:after {
+                    box-sizing: inherit;
+                     }
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 650px) {
+.column {
+    align-content: center;
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  text-align: center;
+  width:95%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 1s;
+}
+.card:hover {
+  box-shadow: 0 40px 80px 15px rgba(0,0,0,0.65);
+}
+
+.container {
+    position: relative;
+  padding: 0 0px;
+}
+
+.container::after, .row::after {
+  content:"";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: black;
+}
+
+.button {
+  border: none;
+  outline:0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  cursor:default;
+  width: 50%;
+}
+
+.button:hover {
+  background-color: green;
+}
+</style>
+</head>
+
+<body>
+    
+<h1 style="text-align: center;color: green">Meet The Team</h1>
+    <br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+        <img src="MCU/ironman.jpg" alt="RDJ" style="width: 100%">
+        <div class="container">
+        <h2>Tony Stark</h2>
+        <p class="title">...</p>
+        <p>...</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+    
+    
+  <div class="column">
+    <div class="card">
+      <img src="MCU/captain_america.jpg" alt="Steve Rogers" style="width:100%">
+      <div class="container">
+        <h2>Steve Rogers</h2>
+        <p class="title">...</p>
+        <p>...</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+    
+  <div class="column">
+    <div class="card">
+      <img src="MCU/black_widow.jpg" alt="Natasha Romanoff" style="width:100%">
+      <div class="container">
+        <h2>Natasha Romanoff</h2>
+        <p class="title">...</p>
+        <p>...</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+    
+  <div class="column">
+    <div class="card">
+      <img src="MCU/hawkeye.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Clint Barton</h2>
+        <p class="title">...</p>
+        <p>...</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+<div class="column"></div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="MCU/bruce_banner.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Bruce Banner</h2>
+        <p class="title">...</p>
+        <p>...</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="MCU/thor.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Thor Odinson</h2>
+        <p class="title">...</p>
+        <p>...</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+    
+    
+    
