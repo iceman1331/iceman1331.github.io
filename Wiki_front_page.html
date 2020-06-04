@@ -11,8 +11,39 @@
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="is-preload">
+<!--This Should not be here, but it is-->
+<style>
+html
+.line-1{
+    position: inherit;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
 
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 2s steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 22em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+    
+</style>
+<!--End of typewriter text CSS-->
+	<body class="is-preload">
 		<!-- Header -->
 			<header id="header">
 				<a class="logo" href="index.html">IISER Bhopal 2020</a>
@@ -43,7 +74,7 @@
 			<section id="banner">
 				<div class="inner">
                     <h1>BigPie</h1>
-                    <p><b>B</b>eta cells <b>I</b>n <b>G</b>ut <b>P</b>roducing <b>I</b>nsulin using <b>E</b>.Coli<p>
+                    <p class="line-1 anim-typewriter"><b>B</b>eta cells <b>I</b>n <b>G</b>ut <b>P</b>roducing <b>I</b>nsulin using <b>E</b>.Coli<p>
 				</div>
 				<video playsinline autoplay muted  style="width:1500px;height:1500px" poster="images/banner_1.jpg">  
                        <source src="images/BigPie.mp4" type="video/mp4">
