@@ -805,6 +805,11 @@ table.alt tbody tr td {
   background: #ffffff;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025); }
 
+
+
+
+
+
 /* Testimonials */
 .testimonials {
   margin: 2.5rem 0;
@@ -1994,14 +1999,14 @@ ul.icons {
     -webkit-transform: translateX(50%) translateY(50%);
     -ms-transform: translateX(50%) translateY(50%);
     transform: translateX(50%) translateY(50%);
-    bottom: 48%;
+    bottom: 50%;
     height: auto;
     min-height: 100%;
     object-fit:contain;
     min-width: 100%;
     overflow: hidden;
     position: absolute;
-    right: 51.75%;
+    right: 49.5%;
     width: auto; }
   #banner:before {
     -moz-transition: opacity 3s ease;
