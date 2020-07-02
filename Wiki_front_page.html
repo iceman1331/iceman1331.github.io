@@ -47,6 +47,12 @@ html
 <!--End of typewriter text CSS-->
     
 	<body class="is-preload">
+        <!--Load Screen-->
+        <div class="loader">
+            <img src="images/simple_dna.gif" >
+        </div>
+
+        
 		<!-- Header -->
 			<header id="header">
 				<a class="logo" href="index.html">IISER Bhopal 2020</a>
@@ -246,6 +252,12 @@ html
 			</footer>
 
 		                                                            <!-- JavaScripts -->
+            <script type="text/javascript">
+                window.addEventListener("load", function () {
+                const loader = document.querySelector(".loader");
+                loader.className += " hidden"; // new class = "loader hidden"
+                });
+            </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
